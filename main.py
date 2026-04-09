@@ -62,6 +62,8 @@ def global_non_max_suppression(all_boxes, iou_threshold=0.15):
     return [boxes[i].astype(np.int32) for i in keep]
 
 
+
+
 def match_template_single(target_img, template_path, threshold=0.75):
     """
     单模板多尺度匹配：用单个电机模板在目标图像中匹配同类电机，支持不同尺寸的电机
